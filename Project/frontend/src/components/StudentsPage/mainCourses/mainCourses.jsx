@@ -5,36 +5,38 @@ import OneMainCourse from "./oneMainCourses.jsx";
 
 export default function MainPage(){
     const [mainCoursePage,setMainCoursePage]=useState(mainCourses);
-    // useEffect(()=>{
-    //     setMainCoursePage(mainCourses);
-    // },[mainCourses])
-    const handleClick=(title)=>{
-        alert("Бронь отменена");
+    
+    useEffect(()=>{
+        setMainCoursePage(mainCourses);
+    },[mainCoursePage])
+
+    const handleClick=(name)=>{
+        alert("Бронь отменена")
         for(let i=0;i<mainCourses.length;i++){
-            if(mainCourses[i].name==title){
-                mainCourses[i]={
-                    name:"",
-                    description:"",
-                };
+            if(mainCourses[i].name==name){
+                mainCourses.splice(i, 1);
             }
         }
-        setMainCoursePage(mainCourses);
-        console.log(mainCoursePage)
 
+        setMainCoursePage(JSON.stringify((mainCoursePage) => ({...mainCoursePage, mainCourses})));
+        console.log(mainCoursePage);
     }
+
+
+
     return(
     <div className="mainPage">
         <h1 className="mainPageTitle">Здесь находятся ваши курсы:</h1>
-        {mainCoursePage.map((course)=>{
-                if(course.description!==''&&course.name!==''){
+        {mainCoursePage&&mainCoursePage.map((course)=>{
+                if(course.description!==null&&course.name!==null){
                      return(
                     <>
-                    <OneMainCourse title={course.name}
-                    description={course.description} onClick={handleClick} children={"Убрать курс"}/>    
+                    <OneMainCourse name={course.name} description={course.description} handleClick={handleClick}/>    
                     </>            
             )
         }
-    })}
+})}
     </div>
     )
+
 }
