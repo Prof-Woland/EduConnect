@@ -1,5 +1,6 @@
 .YoupPage{
     color: #3050BF;
+    
 }
 
 .YoupPageDiv{
@@ -13,7 +14,9 @@
 }
 
 .YourPageDescription{
+    min-height: 56vh;
     padding-top: 25px;
+    padding-bottom: 25px;
     display: flex;
     justify-content: space-around;
     background-color: #e8edff;

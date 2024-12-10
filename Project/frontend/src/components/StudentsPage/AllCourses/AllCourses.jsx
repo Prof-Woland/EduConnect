@@ -13,83 +13,19 @@ export default function AllCourses(){
         const response = courses.response;
         
         setAllCourses(JSON.parse(response));
-
-        // setAllCourses([
-        //     {
-        //         title:'qwerty',
-        //         description:'qwertyuio',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     },
-        //     {
-        //         title:'2',
-        //         description:'22222222',
-        //     }
-        // ])
-
         setLoading(false);
-        console.log(response)      } 
-   useEffect(()=>{
-    getAllCourses();  
-    console.log() 
-    
+        console.log(response)     
+    } 
+
+
+    useEffect(()=>{
+        getAllCourses();  
    },[])
   
  return(
     <>
     <div className="allCurses">
         {loading&&<div>Загрузка курсов...</div>}
-
         <div>
             {!loading&&
             <div>

@@ -1,0 +1,52 @@
+.Footer{
+    background-color: #DAE7FF;
+    color: #3050BF;
+    /* border-top: 2px solid #b6b6b6; */
+}
+
+.FooterContainer{
+    padding-top: 50px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 50px;
+}
+
+.FooterLeft{
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterRight{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.FooterRightT{
+    display: flex;
+    align-items: center;
+}
+
+.FooterLogoDiv{
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.FooterButton{
+    background-color: #DAE7FF;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    color: #3050BF;
+    padding: 20px 15px;
+    cursor: pointer;
+}
+.Contact{
+    text-align: left;
+    margin-top: 20px;
+    font-size: 18px;
+}
