@@ -1,0 +1,14 @@
+.Tab{
+    font-size: 42px;
+    font-weight: bold;
+    color: #3050BF;
+    padding-top: 150px;
+    width: 100%;
+    background-color: #e8edff;
+    text-align: center;
+}
+
+.TabDiv{
+    background-color: #e8edff;
+    margin: 0 auto;
+}

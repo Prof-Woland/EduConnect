@@ -12,7 +12,6 @@ return(
     </div>
     <div className="YourPageDescription">
         <div>
-            <h2>Доступные курсы:</h2>
             <AllCourses />
         </div>
         {/* <div>

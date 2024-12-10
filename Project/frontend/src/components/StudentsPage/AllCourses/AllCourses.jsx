@@ -3,6 +3,7 @@ import OneCourse from "./oneCourse/oneCourse";
 import "./AllCourses.css"
 import axios from "axios"
 import useInput from "../../hooks/useInput";
+import MainPage from "../mainCourses/mainCourses";
 export const mainCourses=[];
 
 
@@ -57,6 +58,10 @@ export default function AllCourses(){
         </div>
         </div>
     </div>
+
+  
     </>
  )
 }
+
+

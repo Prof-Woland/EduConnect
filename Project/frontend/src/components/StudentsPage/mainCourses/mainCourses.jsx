@@ -5,6 +5,7 @@ import OneMainCourse from "./oneMainCourses.jsx";
 
 export default function MainPage(){
     const [mainCoursePage,setMainCoursePage]=useState(mainCourses);
+
     const handleClick=(title)=>{
         alert("Бронь отменена");
         for(let i=0;i<mainCourses.length;i++){

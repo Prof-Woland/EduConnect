@@ -1,0 +1,18 @@
+.TickButton{
+    font-family: "Ubuntu", sans-serif;
+    background-color: #df7416;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px ;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    height: 45px;
+}
+
+.TickButton:hover{
+    opacity: 0.8;
+}
