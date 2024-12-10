@@ -1,0 +1,17 @@
+.YoupPageDiv{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.YourPageDescription{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.YoupPageDivH1{
+    font-size: 60px;
+}

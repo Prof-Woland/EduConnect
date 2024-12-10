@@ -1,0 +1,14 @@
+.getAllCoursesBtn{
+    background-color: #5c9ca1;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    font-size: 18px;
+}
+
+
+
+.allCurses{
+    width: 100%;
+}

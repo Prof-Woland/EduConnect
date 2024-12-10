@@ -1,0 +1,41 @@
+.HeaderBack{
+    width: 95%;
+    padding: 10px 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b6b6;
+    position: fixed;
+    z-index: 9999;
+}
+
+.HeaderLeft{
+    display: flex;
+    align-items: center;
+}
+
+.HeaderTitle{
+    margin-left: 35px;
+    font-size: 42px;
+    font-weight: bold;
+    color: #3050BF;
+    align-items: center;
+}
+
+.HeaderNav{
+    font-weight: bold;
+    color: #3050BF;
+}
+
+
+.NavButton{
+    background-color: #fff;
+    padding: 25px 40px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: #263d94;
+    cursor: pointer;
+}
