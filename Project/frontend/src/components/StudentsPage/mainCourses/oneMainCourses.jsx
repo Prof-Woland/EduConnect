@@ -8,7 +8,7 @@ export default function OneMainCourse({title,description,onClick,children}){
                 <p className="description">{description}</p>
             </div>
             <div>
-                <button className="addCourses" onClick={()=>onClick(title,description)}>{children}</button>
+                <button className="addCourses" onClick={()=>onClick(title)}>{children}</button>
             </div>
         </div>
     )
