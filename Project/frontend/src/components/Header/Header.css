@@ -1,7 +1,7 @@
 .HeaderBack{
     width: 95%;
     padding: 10px 50px;
-    background-color: #fff;
+    background-color: #e8edff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,12 +30,13 @@
 
 
 .NavButton{
-    background-color: #fff;
-    padding: 25px 40px;
+    background-color: #e8edff;
+    padding: 15px 25px;
+    margin-left: 5px;
     border-radius: 10px;
     border: none;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     color: #263d94;
     cursor: pointer;
 }
