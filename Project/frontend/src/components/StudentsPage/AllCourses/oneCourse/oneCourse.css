@@ -1,13 +1,19 @@
 .oneCourseDiv{
-    width: 100%;
+    width: 750px;
     /* border: 3px solid #6cccfc; */
     margin-top: 20px;
     padding: 10px;
-    background-color: #6cccfc;
+    background-color: #ffffff;
     border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #3050BF;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .addCourses{
-    background-color: #5c9ca1;
+    background-color: #3050BF;
     border: none;
     color: white;
     padding: 10px 25px;
