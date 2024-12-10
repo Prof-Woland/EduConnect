@@ -16,6 +16,12 @@ export default function Header(){
                 <div className="HeaderNav">
                     <div>
                         <button className='NavButton'>
+                            Курсы
+                        </button>
+                        <button className='NavButton'>
+                            Стажировки
+                        </button>
+                        <button className='NavButton'>
                             Профиль
                         </button>
                         <button className='NavButton'>
