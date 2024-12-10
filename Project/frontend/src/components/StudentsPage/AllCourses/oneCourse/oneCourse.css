@@ -1,0 +1,28 @@
+.oneCourseDiv{
+    width: 100%;
+    /* border: 3px solid #6cccfc; */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #6cccfc;
+    border-radius: 10px;
+}
+.addCourses{
+    background-color: #5c9ca1;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius:8px ;
+}
+
+
+.title{
+    text-align: left;
+    font-size: 20px;
+
+}
+
+.description{
+        text-align: left;
+        font-size: 15px;
+
+}
