@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'courses',
     
 ]
 
@@ -56,7 +57,7 @@ MIDDLEWARE = [
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES':[
-        'rest_framework.permission.AllowAny' #FIXME: Remmove
+        'rest_framework.permissions.AllowAny' #FIXME: Remmove
     ]
 }
 
