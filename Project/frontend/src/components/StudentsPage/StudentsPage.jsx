@@ -1,4 +1,3 @@
-
 import AllCourses from "./AllCourses/AllCourses"
 import "./StudentsPage.css"
 import YourCourses from "./YourCourses/YourCourses"

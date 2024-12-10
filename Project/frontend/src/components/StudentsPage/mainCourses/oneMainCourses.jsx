@@ -1,6 +1,6 @@
 
-import "./oneCourse.css"
-export default function OneCourse({title,description,onClick,children}){
+
+export default function OneMainCourse({title,description,onClick,children}){
     return(
         <div className="oneCourseDiv">
             <div>
