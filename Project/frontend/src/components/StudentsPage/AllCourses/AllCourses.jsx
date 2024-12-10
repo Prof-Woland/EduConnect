@@ -11,7 +11,8 @@ export default function AllCourses(){
         const data = await axios.get("http://localhost:8000/getAllCourses");
         const courses = data.request;
         const response = courses.response;
-        setAllCourses(response);
+        
+        setAllCourses(JSON.parse(response));
 
         // setAllCourses([
         //     {
@@ -77,10 +78,10 @@ export default function AllCourses(){
         // ])
 
         setLoading(false);
-
-      } 
+        console.log(response)      } 
    useEffect(()=>{
-    getAllCourses();   
+    getAllCourses();  
+    console.log() 
     
    },[])
   
@@ -94,7 +95,7 @@ export default function AllCourses(){
             <div>
                 {allCourses.map((course)=>{
                     return(
-                        <OneCourse title={course.title} description={course.description}/>
+                        <OneCourse title={course.name} description={course.description}/>
                     )
                 })}
             </div>}
