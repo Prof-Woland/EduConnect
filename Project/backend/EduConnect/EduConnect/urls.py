@@ -15,12 +15,23 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-
+from django.urls import path, re_path
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from users.views import *
 from courses.views import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),    
-    path('getAllCourses/', CourseList.as_view()),
-    path('getAllCourses/<str:name>/', LectureList.as_view()),
+    path('api/getCourse/', CourseAPIList.as_view()),
+    path('api/getLecture/', LectureViewSet.as_view({'get':'list'})),
+    path('api/getLecture/<str:title>/',LectureViewSet.as_view({'get':'retrieve'})),
+    path('addFavouriteCourse/',UserFavoriteCoursesViewSet.as_view({"post":"create"})),
+    path('getFavouriteCourses/',UserFavoriteCoursesViewSet.as_view({"post":"list"})),
+    path('deleteFavouriteCourse/',UserFavoriteCoursesViewSet.as_view({"delete":"destroy"})),
+    path('user/', UserView.as_view()),
+    path('register/', RegisterUserView.as_view()),
+    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+
 
 ]
