@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react"
 import { mainCourses } from "../AllCourses/AllCourses.jsx"
+import { useNavigate } from 'react-router-dom';
+import './mainCourses.css'
 // import OneCourse from "../AllCourses/oneCourse/oneCourse"
 import OneMainCourse from "./oneMainCourses.jsx";
 
 export default function MainPage(){
+    const navigate = useNavigate();
     const [mainCoursePage,setMainCoursePage]=useState(mainCourses);
     
     useEffect(()=>{
@@ -22,11 +25,24 @@ export default function MainPage(){
         console.log(mainCoursePage);
     }
 
+    // const handleClick=(name)=>{
+    //     alert("Бронь отменена")
+    //     for(let i=0;i<mainCourses.length;i++){
+    //         if(mainCourses[i].name==name){
+    //             mainCourses.splice(i, 1);
+    //             axios.delete(http://localhost:8000/deleteFavoriteCourse/${name})
+    //         }
+    //     }
+
+    //     setMainCoursePage(JSON.stringify((mainCoursePage) => ({...mainCoursePage, mainCourses})));
+    //     console.log(mainCoursePage);
+    // }
 
 
     return(
     <div className="mainPage">
         <h1 className="mainPageTitle">Здесь находятся ваши курсы:</h1>
+        <div className="mainPageCont">
         {mainCoursePage&&mainCoursePage.map((course)=>{
                 if(course.description!==null&&course.name!==null){
                      return(
@@ -35,7 +51,7 @@ export default function MainPage(){
                     </>            
             )
         }
-})}
+})}</div>
     </div>
     )
 

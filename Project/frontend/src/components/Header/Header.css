@@ -1,5 +1,5 @@
 .HeaderBack{
-    width: 95%;
+    width: 100%;
     padding: 10px 50px;
     background-color: #DAE7FF;
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center;
     /* border-bottom: 2px solid #b6b6b6; */
     position: fixed;
-    z-index: 9999;
+    z-index: 800;
 }
 
 .HeaderLeft{
@@ -17,7 +17,7 @@
 
 .HeaderTitle{
     margin-left: 35px;
-    font-size: 42px;
+    font-size: 40px;
     font-weight: bold;
     color: #3050BF;
     align-items: center;
@@ -39,4 +39,9 @@
     font-size: 20px;
     color: #263d94;
     cursor: pointer;
+}
+
+.LinkHeader{
+    text-decoration: none;
+    color: #3050BF;
 }

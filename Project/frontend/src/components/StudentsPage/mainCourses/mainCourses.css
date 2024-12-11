@@ -1,0 +1,26 @@
+.mainPage{
+    min-height: 50vh;
+    margin: 0 auto;
+    background-color: #e8edff;
+}
+
+.mainPage > h1{
+    padding-top: 10px;
+    font-size:40px;
+    color: #3050BF;
+    text-align: center;
+}
+
+.mainPageCont{
+    color: #3050BF;
+    width: min-content;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.One{
+    margin: 0 auto;
+}

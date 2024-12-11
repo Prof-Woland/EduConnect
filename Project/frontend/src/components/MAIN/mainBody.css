@@ -1,14 +1,30 @@
-.Tab{
-    font-size: 42px;
+.Back{
+    background-color: #e8edff;
+}
+
+.ttab{
+    font-size: 45px;
     font-weight: bold;
     color: #3050BF;
-    padding-top: 150px;
+    padding-top: 120px;
     width: 100%;
     background-color: #e8edff;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.TabD{
+    width: 100%;
     text-align: center;
 }
 
 .TabDiv{
     background-color: #e8edff;
+    margin: 0 auto;
+}
+
+.TabEl{
+    width: min-content;
     margin: 0 auto;
 }

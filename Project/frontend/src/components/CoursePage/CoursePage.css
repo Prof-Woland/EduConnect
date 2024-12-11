@@ -1,5 +1,4 @@
 .CoursePageBack{
-    padding-top: 250px;
     padding-bottom: 50px;
     background-color: #e8edff;
     color: #3050BF;
@@ -29,5 +28,5 @@
 .courseContent{
     margin-top: 25px;
     font-size: 20px;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
 }

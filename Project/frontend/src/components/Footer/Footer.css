@@ -5,13 +5,13 @@
 }
 
 .FooterContainer{
-    padding-top: 50px;
+    padding-top: 40px;
     width: 60%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: start;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .FooterLeft{
@@ -38,15 +38,16 @@
 
 .FooterButton{
     background-color: #DAE7FF;
-    font-size: 20px;
+    font-size: 17px;
+    text-align: left;
     font-weight: bold;
     border: none;
     color: #3050BF;
-    padding: 20px 15px;
+    padding: 10px 15px;
     cursor: pointer;
 }
 .Contact{
     text-align: left;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 17px;
 }

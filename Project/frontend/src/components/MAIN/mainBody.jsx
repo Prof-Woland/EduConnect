@@ -8,12 +8,15 @@ import { useState } from 'react';
 export default function MainBody(){
     const [tab, setTab] = useState('avaliable')
     return (
-    <div>
-    <div className='Tab'>
-      <div>
+    <div className='Back'>
+    <div className='ttab'>
+      <div className='TabD'>
         Курсы
       </div>
-      <div className='TabDiv'>
+      
+    </div>
+    <div className='TabEl'>
+      <div>
         <TabSection active = {tab} onChange = {(current)=>setTab(current)}/>
       </div>
     </div>
