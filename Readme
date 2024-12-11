@@ -1,0 +1,9 @@
+Запуск Backend:
+1. Заходим в папку Project
+2. Прописываем venv/Scripts/activate.ps1
+3. Затем cd EduConnect
+4. python manage.py runserver 8000
+Запуск Frontend:
+1. Заходим в папку Project
+2. Прописываем cd frontend
+3. И npm start
