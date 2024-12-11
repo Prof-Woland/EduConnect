@@ -1,0 +1,10 @@
+.Tab{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: min-content;
+    padding: 0px 5px;
+    height: 61px;
+    border-radius: 10px;
+    background-color: rgba(101, 101, 101, 0.071)
+}

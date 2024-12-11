@@ -1,0 +1,12 @@
+.modalCloseButton{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: rgb(2, 0, 107);;
+}
+
+.modalCloseButton:hover{
+    transition: 0.5;
+}

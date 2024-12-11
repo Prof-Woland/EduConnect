@@ -1,14 +1,30 @@
+.YoupPage{
+    color: #3050BF;
+    
+}
+
 .YoupPageDiv{
+    padding-top: 20px;
     text-align: center;
     display: flex;
     justify-content: center;
     width: 100%;
+    background-color: #e8edff;
 
 }
 
 .YourPageDescription{
+    min-height: 56vh;
+    padding-top: 40px;
+    padding-bottom: 25px;
     display: flex;
     justify-content: space-around;
+    background-color: #e8edff;
+}
+
+.YourPageDescription > div > h2{
+    text-align: center;
+    font-size: 45px;
 }
 
 
