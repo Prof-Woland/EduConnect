@@ -16,7 +16,18 @@ export default function Login(){
         });
         history("/home")
        await axios.post("/login",{ name:inputName,
-        password:inputPassword});
+        password:inputPassword}
+        .then(response => {
+
+            if (response.status != 201) return
+
+            localStorage.setItem('accessToken', response.data.access);
+
+            localStorage.setItem('refreshToken', response.data.refresh);
+
+        })
+
+        .catch(error => console.error(error)));
     }
     return(
         <div className="bg-primary">

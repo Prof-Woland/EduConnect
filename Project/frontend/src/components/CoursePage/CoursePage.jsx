@@ -12,7 +12,13 @@ export default function CoursePage({title, description, lections}){
                 <div>
                     <div className='lectionsTitle'>Лекции:</div>
                     <div className="courseContent">
-                        {/* {lections.map((lection)=>{})} */lections}
+                        {lections.map((lection)=>{
+                            return(
+                                <>
+                                {lection}
+                                </>
+                            )
+                        })}
                     </div>
                 </div>
             </div>

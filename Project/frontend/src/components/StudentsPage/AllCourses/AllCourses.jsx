@@ -8,6 +8,7 @@ export const mainCourses=[];
 
 
 export default function AllCourses(){
+    let accessToken = 'ukgweyiyicgigiycgkhvJHFTUfyjfuxyg';
     const searchCourse=useInput('');
     const [allCourses,setAllCourses]=useState([]);
     const [loading,setLoading]=useState(true)
@@ -24,10 +25,11 @@ export default function AllCourses(){
     getAllCourses();      
    },[])
 
-    function addCourse(name,description){
+    function addCourse(name,description,lections){
         const course={ 
              name:name,
              description:description,
+             lections:lections,
         }
             if(JSON.stringify(mainCourses).includes(JSON.stringify(course))==false){
                 mainCourses.push(course);
@@ -38,14 +40,21 @@ export default function AllCourses(){
 
 //     async function getAllCourses() {
 //     setLoading(true);
-//     const data = await axios.get("http://localhost:8000/getAllCourses");
+//     const data = await axios.get("http://localhost:8000/getAllCourses", {speed: 'Fast, very fast'}, {headers: { Authorization: `Bearer ${accessToken}` },})    
+//.then(response => {
+//     if (response.status == 401){updateTokens()}).catch(error => console.error(error))
+//         }
+//     };
 //     const courses = data.request;
 //     const response = courses.response;
 //     setAllCourses(JSON.parse(response));
 
 // } 
 // async function getFavoiteCourses() {
-//     const data = await axios.get("http://localhost:8000/getFavoriteCourses");
+//     const data = await axios.get("http://localhost:8000/getFavoriteCourses", {speed: 'Fast, very fast'}, {headers: { Authorization: `Bearer ${accessToken}` },}).then(response => {
+//     if (response.status == 401){updateTokens()}).catch(error => console.error(error))
+//         }
+//     };
 //     const courses = data.request;
 //     const response = courses.response;
 //     mainCourses=JSON.parse(response);
@@ -67,7 +76,8 @@ export default function AllCourses(){
 //         }
 //         console.log(mainCourses);
 
-//    await axios.post("http://localhost:8000/addFavoriteCourse",course);    
+//    await axios.post("http://localhost:8000/addFavoriteCourse",course, {speed: 'Fast, very fast'}, {headers: { Authorization: `Bearer ${accessToken}` },}).then(response => {
+//     if (response.status == 401){updateTokens()}).catch(error => console.error(error));    
 // }
 
    
@@ -85,7 +95,7 @@ export default function AllCourses(){
             <div>
                 {allCourses.filter((course)=>course.name.toLowerCase().includes(searchCourse.value.toLocaleLowerCase())).map((course)=>{
                     return(
-                        <OneCourse title={course.name} description={course.description} onClick={addCourse} children={"Добавить курс"}/>
+                        <OneCourse lections={course.lectures} title={course.name} description={course.description} onClick={addCourse} children={"Добавить курс"}/>
                     )
                 })}
             </div>}

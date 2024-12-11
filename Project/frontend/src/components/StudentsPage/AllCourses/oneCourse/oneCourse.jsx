@@ -11,7 +11,7 @@ export default function OneCourse({title,description,onClick,children, lections}
                 <p className="description">{urezDescr}</p>
             </div>
             <div>
-                <button className="addCourses" onClick={()=>onClick(title,description)}>{children}</button>
+                <button className="addCourses" onClick={()=>onClick(title,description,lections)}>{children}</button>
             </div>
         </div>
     )
