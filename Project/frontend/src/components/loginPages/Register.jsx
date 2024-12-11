@@ -19,7 +19,7 @@ export default function Register(){
             inputEmail:inputEmail,
             inputPassword:inputPassword,
         })
-        await axios.post("/registrate",
+        await axios.post("/register",
             {
             name:inputName,
             surname:inputSurname,
@@ -27,6 +27,7 @@ export default function Register(){
             email:inputEmail,
             password:inputPassword,
         }
+        
     );
         history('/login');
 

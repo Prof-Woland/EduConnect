@@ -27,8 +27,8 @@ export default function Header(){
                         <button className='NavButton'>
                             Профиль
                         </button>
-                        <button className='NavButton'>
-                            Выйти
+                        <button className='NavButton' onClick={() => navigate('/login', { replace: true})}>
+                            Войти
                         </button>
                     </div>
                 </div>
